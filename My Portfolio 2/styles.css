@@ -1,0 +1,145 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: Ubuntu;
+}
+header {
+	position: fixed;
+	width: 100%;
+}
+
+#navbar {
+	display: flex;
+	justify-content: flex-end;
+	padding: 30px;
+	background-color: #CC0000;
+}
+
+#navbar a {
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bolder;
+	color: white;
+	margin-right: 50px;
+}
+
+#welcome-section {
+	height: 100vh;
+	text-align: center;
+	font-size: 30px;
+	background-color: bisque;
+	padding: 150px;
+}
+
+#welcome-section h2 {
+	font-size: 20px;
+}
+
+#welcome-section p {
+	font-size: 15px;
+}
+
+#projects {
+	text-align: center;
+	padding: 50px;
+	background-color: darkcyan;
+	
+}
+#projects p {
+	text-transform: capitalize;
+	font-size: 20px;
+	font-weight: bolder;
+	color: white;
+}
+
+.project-tile {
+	display: grid;
+	padding: 50px;
+	justify-items: center;
+	grid-row-gap: 40px;
+	grid-template-columns: 1fr 1fr;
+	color: white;
+}
+
+.project-tile img {
+	max-width: 500px;
+}
+
+.project-tile #bike {
+	max-width: 500px;
+	background-color: #330066;
+	text-transform: capitalize;
+}
+
+.project-tile #bday {
+	max-width: 500px;
+	background-color: #330066;
+	text-transform: capitalize;
+}
+#project-tile #survey {
+	max-width: 500px;
+	background-color: #330066;
+	text-transform: capitalize;
+}
+.project-tile #monthly {
+	max-width: 500px;
+	background-color: #330066;
+	text-transform: capitalize;
+}
+
+#projects a {
+	text-decoration: none;
+	background-color: black;
+	padding: 8px;
+	color: white;
+}
+
+#contacts {
+	text-align: center;
+	padding: 50px;
+
+}
+
+#contacts h1 {
+	font-size: 50px;
+	padding: 20px;
+}
+
+#socials {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#socials img {
+	max-width: 40px;
+}
+
+#profile-link {
+	text-decoration: none;
+	font-size: 25px;
+	padding: 10px;
+	font-weight: bolder;
+}
+
+@media (max-width: 550px) {
+
+	.project-tile {
+		display: block;
+		padding: 0;
+		
+	}
+	.project-tile img {
+		width: 100%;
+	}
+	.project-tile p {
+		padding-bottom: 15px ;
+	}
+
+
+
+

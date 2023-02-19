@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width">
+	<meta charset="utf-8">
+	<title> Survey Form </title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<div class="header">
+		<h1> ITforFuture Survey Form </h1>
+		<p> Thank you for taking the time to help us improve the platform </p>
+	</div>
+
+		<div class="main">
+			
+			<div class="box-name">
+				<p> Name </p>
+				<input type="text" name="name" id="name" placeholder="Enter your name">
+			</div>
+
+			<div class="box-email">
+				<p> Email </p>
+				<input type="text" name="email"  placeholder="Enter your email">
+			</div>
+
+			<div class="box-age">
+				<p> Age (optional) </p>
+				<input type="number" name="num">
+
+			</div>
+
+			<div class="box-role">
+				<p> Which option best describes your current role? </p>
+
+				<form>
+			  	<select id="level" name="level" >
+			  	<option value="beginner">Beginner</option>
+			   	<option value="mediocre">Mediocre</option>
+			   	<option value="advanced">Advanced</option>
+			   	<option value="pro">Pro</option>
+			  	</select>
+				</form>
+
+			</div>
+
+			<div class="recommend">
+				<p> Would you recommend coding to your friends? </p>
+				<form>
+					<input type="radio" name="recommend" id="recommend">
+					<label type="text" for="recommend"> Definitely </label> <br>
+					<input type="radio" name="recommend" id="recommend">
+					<label type="text" for="recommend"> Maybe </label> <br>
+					<input type="radio" name="recommend" id="recommend">
+					<label type="text" for="recommend"> Not sure </label>
+				</form>
+			</div>
+			
+			<div class="box-feature">
+				<p> What is your favorite Programming Language?  </p>
+				
+				<form>
+			  	<select id="level" name="level" >
+			  	<option value="a">C++</option>
+			   	<option value="b">Java</option>
+			   	<option value="c">Python</option>
+			   	<option value="d">Javascript</option>
+			   	<option value="e">Ruby</option>
+			   	<option value="f">C</option>
+			   	<option value="g">C#</option>
+			  	</select>
+				</form>
+
+
+			</div>
+<br>
+
+
+			<div class="projects">
+				<p> What would you like to be in the next 3 years? (Check all that apply) </p>
+				<form>
+
+					<input type="checkbox" name="frontend" id="frontend"> 
+					<label type="text" for="frontend"> Front-end Developer </label> <br>
+					<input type="checkbox" name="frontend" id="backend">
+					<label type="text" for="backend"> Back-end Developer </label> <br>
+
+					<input type="checkbox" name="data" id="data"> 
+					<label type="text" for="data"> Data Analyst </label> <br>
+					<input type="checkbox" name="full" id="full">
+					<label type="text" for="full"> Full-Stack Developer </label> <br>
+
+
+					<input type="checkbox" name="cyber" id="cyber"> 
+					<label type="text" for="cyber"> Cyber Security Engineer </label> <br>
+
+					<input type="checkbox" name="software" id="software">
+					<label type="text" for="software"> Software Engineer </label> <br>
+
+					<input type="checkbox" name="systems" id="systems"> 
+					<label type="text" for="systems"> Systems Developer </label> <br>
+					<input type="checkbox" name="softdev" id="softdev">
+					<label type="text" for="softdev"> Software Developer </label> <br>
+
+					<input type="checkbox" name="project" id="project"> 
+					<label type="text" for="project"> Project Manager </label> <br>
+
+					<input type="checkbox" name="java" id="java">
+					<label type="text" for="java"> Java Developer </label> <br>
+
+					<input type="checkbox" name="system" id="system">
+					<label type="text" for="system"> Systems Administrator </label> <br>
+
+				</form>
+
+
+
+				<div class="footer">
+					<p> Any comments or suggestions? </p>
+					<textarea>  </textarea><br>
+					<div class="btn">
+					<a href="#"> Submit </a>
+					</div>
+				</div>
+				
+
+
+			</div>
+
+		</div> <!-------main------>
+	
+
+
+<script type="text/javascript" src="./index.js"></script>
+</body>
+</html>

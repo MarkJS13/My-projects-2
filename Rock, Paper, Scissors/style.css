@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;600;700&family=Noto+Serif:wght@400;700&family=PT+Sans:wght@400;700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 80px 5fr;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 33, 50);
+    font-size: 30px;
+    color: #fff;
+    
+}
+
+#game-board {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgb(23, 20, 177);
+    color: #fff;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#game-board .mechanics p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+
+
+#game-board .gameplay {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+#game-board .gameplay img {
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 90px;
+    transition: .9s;
+}
+
+
+#game-board .gameplay img:hover {
+    background-color: #fff;
+    
+}
+
+#game-board .gameplay p {
+    text-align: center;
+    font-size: 20px;
+}
+
+#game-board .score {
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 7px;
+    margin: 40px auto;
+    
+}
+
+.reset {
+    background-color: transparent;
+    display: flex;
+    color: white;
+    padding: 5px;
+    margin-bottom: 30px;
+    border: 2px solid white;
+}
+.place-holder {
+    font-size: 50px;
+}
+
+.result {
+    font-size: 30px;
+}

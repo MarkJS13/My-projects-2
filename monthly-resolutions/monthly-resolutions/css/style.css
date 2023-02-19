@@ -1,0 +1,186 @@
+/* 
+Project Name: Monthly Resolutions
+Client: One Month
+Author: Christopher Castig | @castig
+*/
+
+
+/*----------------------------------------------------------------------------- 
+01=BASE   
+-----------------------------------------------------------------------------*/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+  }
+
+body {
+	font-family: 'Lato', sans-serif;
+    line-height: 1.7;
+    font-size: 100%;
+    background-image: url('../images/notebook.png');
+    background-attachment: fixed;
+}
+
+
+
+
+/*----------------------------------------------------------------------------- 
+02=LAYOUT  
+-----------------------------------------------------------------------------*/
+
+.header {
+    width: 1100px;
+    margin: auto;
+    padding: 0;
+    
+}
+
+.header h1{
+    margin: 0;
+}
+.header p{
+    margin: 0;
+    padding-bottom: 15px;
+
+}
+
+
+
+
+.container {
+    width: 1100px;
+    
+    margin: auto;
+    
+    
+}
+.htmlcss {
+    width: 700px;
+    float: left;
+    padding: 30px;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+.htmlcss p {
+    font-size: 12px;
+    color: gray;
+    padding: 5px;
+}
+
+
+.sidebar {
+    width: 300px;
+    float: left;
+    padding: 25px;
+    align-content: center;
+    margin-right: 0;
+    border-left: 2px inset #f2f2f2;
+
+}
+.sidebar p {
+    font-style: italic;
+    font-size: 12px;
+    padding: 5px;
+    margin-left: 5px;
+
+}
+
+.sidebar h2 {
+    padding: 0;
+    
+    margin-bottom: 0;
+}
+.sidebar ul {
+   
+    margin-top: 0;
+}
+.sidebar i {
+    
+}
+
+
+
+
+
+
+.javascript {
+    clear: both;
+    width: 700px;
+    
+    padding: 30px;
+}
+.javascript p {
+    font-size: 12px;
+    color: gray;
+    padding: 5px;
+}
+
+.github {
+    width: 700px;
+    padding: 30px;
+}
+.github p {
+    font-size: 12px;
+    color: gray;
+    padding: 5px;
+}
+.reactjs {
+    width: 700px;
+    padding: 30px;
+}
+.reactjs p {
+    font-size: 12px;
+    color: gray;
+    padding: 5px;
+}
+
+
+
+/*----------------------------------------------------------------------------- 
+03=MAIN  
+-----------------------------------------------------------------------------*/
+.color {
+    background-color: white;
+}
+.bold {
+    font-style: italic;
+    color: black;
+}
+
+img {
+    margin: 0;
+}
+
+.footer p {
+    width: 1100px;
+    margin: auto;
+    padding: 10px;
+   
+}
+.me img{
+    width: 150px;
+    border-radius: 50px; 
+}
+
+blockqoute {
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: crimson;
+    cursor: pointer;
+}
+a:active {
+  color: #0000FF;
+}
+
+i {
+    font-size: 13px;
+}

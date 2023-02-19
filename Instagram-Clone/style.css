@@ -1,0 +1,410 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+}
+:root {
+    ---blue: rgb(29,160,246);
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 120px;
+}
+
+.container {
+    background-color: rgb(250,250,250);
+    height: auto;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 60px;
+    background-color: #fff;
+}
+
+#header .search input{
+    background-color: rgb(239,239,239);
+    padding: 5px;
+    border: none;
+}
+
+form.search {
+    border: none;
+    padding: 0;
+  }
+  
+  form.nosubmit {
+    border: none;
+    padding: 0;
+    
+  }
+  
+  input.nosubmit {
+    font-size: 15px;
+    width: 260px;
+    border: none;
+    display: block;
+    padding: 8px 4px 9px 45px;
+    background: rgb(239,239,239) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+    border-radius: 6px;
+  }
+
+  input.nosubmit:focus {
+    outline: none;
+    
+  }
+
+.logo {
+    position: relative;
+}
+.logo span{
+    position: absolute;
+    padding-left: 5px;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 25px;
+    padding: auto 100px;
+}
+
+.nav-icons img {
+    width: auto;
+    height: 20px;
+}
+
+
+.main {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 190px 2fr 1fr 190px;
+    grid-template-rows: 110px 1fr 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 20px;
+}
+.main #stories img {
+    width: 55px;
+    height: 55px;
+    border-radius: 40px;
+    border: 4px solid rgb(235, 39, 186);
+    
+}
+.main #stories h5 {
+    font-size: 11px;
+    padding: 0;
+    padding-top: 5px;
+    margin: 0;
+    text-align: center;
+    font-weight: 100;
+}
+
+.main #stories {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-auto-flow: column;
+    padding: 15px;
+    border: 1px solid rgba(128, 121, 121, 0.13);
+    background-color: rgb(255,255,255);
+    border-radius: 12px;
+    
+}
+
+.main #stories .story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.main #details {
+    grid-column: 3/4;
+    grid-row: 1/6;
+    padding-top: 20px;
+    
+}
+
+
+.main #details .profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+.main #details .profile .name{
+    flex: 1;
+}
+
+.main #details .profile .name p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+.main #details .profile .name p:first-child {
+    font-weight: 700;
+}
+
+.main #details .profile .switch {
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: rgb(29,160,246);
+}
+
+.main #details img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+
+.main #details .suggestions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main #details .suggestions img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.main #details .suggestions .for-you {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main #details .suggestions .for-you p {
+    font-size: 13px;
+    color: black;
+    font-weight: 900;
+}
+
+.main #details .suggestions .for-you p:first-child{
+    font-size: 13px;
+    color: rgb(162,162,162);
+    font-weight: 900;
+}
+
+.main #details .suggestions .suggested-people {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.main #details .suggestions .suggested-people .class-people {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.main #details .suggestions .suggested-people .class-people .name {
+    flex: 1;
+}
+
+.main #details .suggestions .suggested-people .class-people .name p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+.main #details .suggestions .suggested-people .class-people .name p:first-child {
+    font-weight: 700;
+}
+
+.main #details .suggestions .suggested-people .class-people .follow  {
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: var(---blue)
+}
+
+.main #details .footer {
+    padding-top: 12px;
+    font-size: 11px;
+    color: rgb(162,162,162);
+}
+
+/* Post 1 */
+
+.main #post-1 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-color: rgb(255,255,255);
+    border: 1px solid rgba(128, 121, 121, 0.13);
+    border-radius: 12px;
+    
+}
+
+.prof {
+    padding: 0 12px;
+}
+
+.prof img {
+    width: 45px;
+    height: 45px;
+    border-radius: 40px;
+    border: 3px solid rgb(235, 39, 186);
+}
+
+.prof{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.prof h2 {
+    font-weight: 100;
+}
+
+.prof p{
+    flex: 1;
+    font-size: 13px;
+    font-weight: 900;
+    margin: 0;
+}
+.prof span {
+    display: block;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.main-post img{
+   width: 100%;
+   height: 520px;
+}
+
+.footer-post img {
+    width: 25px;
+    height: 25px;
+}
+
+.footer-post {
+    padding: 5px 15px;
+    
+}
+
+.footer-post #icons {
+    display: flex;
+    gap: 18px;
+}
+
+.footer-post #icons .send {
+    flex: 1;
+    
+}
+ .footer-post #post-details span  {
+    font-weight: 900;
+}
+.footer-post #post-details p {
+    font-size: 13px;
+}
+
+.footer-post #post-details .description .likes img {
+    border-radius: 20px;
+}
+
+.footer-post #post-details .description .likes{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-post #post-details .description .caption p{
+    margin-top: 0;
+}
+
+.footer-post #post-details .comments p {
+    margin: 0;
+}
+
+.footer-post #post-details .comments .view-comments p {
+    color: rgb(152,152,152);
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-post #post-details .comments .comment-threads .comment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-post #post-details .comments .comment-threads .comment p {
+    margin: 3px;
+}
+.footer-post #post-details .comments .comment-threads .comment img {
+    width: 12px;
+    height: 12px;
+}
+
+.footer-post #post-details .time {
+    font-size: 9px;
+    margin: 8px 0;
+    color: rgb(152,152,152);
+    text-transform: uppercase;
+    padding-top: 8px;
+}
+hr {
+   font-weight: 900;
+    
+}
+
+.footer-post #user-comment {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-post #user-comment p {
+    flex: 1;
+    font-size: 13px;
+    color: rgb(152,152,152);
+}
+
+.footer-post #user-comment a {
+    font-size: 13px;
+    color: var(---blue);
+    opacity: 60%;
+}
+
+.footer-post #user-comment i {
+    font-size: 25px;
+}
+
+
+/* Post 2 */
+
+.main #post-2 {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    background-color: rgb(255,255,255);
+    border: 1px solid rgba(128, 121, 121, 0.13);
+    border-radius: 12px;
+    
+}
+
+/* Post 3 */
+
+.main #post-3 {
+    grid-row: 4/5;
+    grid-column: 2/3;
+    background-color: rgb(255,255,255);
+    border: 1px solid rgba(128, 121, 121, 0.13);
+    border-radius: 12px;
+    
+}

@@ -1,0 +1,35 @@
+
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+.hero img {
+  width: 100%;
+  border-radius: 0;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 60px;
+}
+.contact h2{
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+
+
+
+aside.right, aside.left{
+  text-align: center;
+  float: inherit;
+}
+
+iframe {
+  width: 100%;
+}

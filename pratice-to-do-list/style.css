@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;600;700&family=Poppins:wght@100;300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    background-color: rgb(4, 97, 97);
+    scroll-behavior: smooth;
+}
+
+.container {
+    
+    
+    padding: 50px;
+    
+}
+.title {
+    text-align: center;
+}
+
+#add-task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+}
+
+.add {
+    width: 500px;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: rgb(119, 114, 114);
+    font-size: 15px;
+}
+
+.submit {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: rgb(250, 183, 159);
+    padding: 12px;
+    color: rgb(211, 30, 30);
+    font-weight: 700;
+    font-size: 15px;
+
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+#list-task {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.task-list {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 15px;
+}
+
+li {
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: rgb(38, 59, 95);
+    width: 550px;
+}
+
+.arrow {
+    display: flex;
+    border: 1px solid transparent;
+    background-color: black;
+    padding: 5px;
+    width: 80px;
+    display: none;
+    transition: transform .8s;
+    
+}
+
+.arrow:hover {
+    transform: scale(1,1.2);
+    background-color: transparent;
+    cursor: pointer;
+}

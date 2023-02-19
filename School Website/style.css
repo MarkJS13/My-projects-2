@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+/*main*/
+#main {
+    display: grid;
+    grid-template-rows: 500px 130px;
+    grid-template-columns: 1fr;
+    row-gap: 2px;
+}
+#home {
+    background-image: url(images/dhvsu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    
+}
+#nav-bar {
+    display: flex;
+    padding: 30px;
+}
+#nav-bar a {
+    text-decoration: none;
+    color: rgb(148, 4, 4);
+    font-size: 15px;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+#nav-bar li {
+    transition: transform .8s;
+    color: rgb(148, 4, 4);
+    list-style-type: disc;
+}
+#nav-bar li:hover {
+    transform: scale(1.1);
+    
+}
+
+
+#links {
+    
+    grid-row: 2/3;
+    background-color: #490205;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    
+}
+
+.quicklinks {
+    padding: 10px;
+    font-size: 30px;
+    
+}
+.covid {
+    padding: 10px 100px;
+    border: 1px solid white; 
+}
+
+.donations {
+    padding: 10px 100px;
+    border: 1px solid white;
+}
+
+.public-service {
+    padding: 10px 100px;
+    border: 1px solid white;
+}
+
+.covid:hover,
+.donations:hover,
+.public-service:hover
+ {
+    background-color: white;
+    color: #490205;
+}
+
+/*main*/
+
+ 
+
+/*announcements*/
+#announcements {
+    padding: 30px 50px 70px 50px;
+}
+.ann-title {
+    font-size: 30px;
+}
+
+#announcements img{
+    max-width: 100%;
+}
+
+#announcement-tile {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 30px;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    
+}
+
+.law h1 {
+    font-size: 20px;
+}
+
+.enrollment input{
+    margin-top: 20px;
+    
+}
+.enrollment p {
+    margin: 0;
+}
+.enrollment h1 {
+    font-size: 18px;
+}
+
+.procedure {
+    text-align: center;
+}
+.procedure h1{
+    font-size: 20px;
+}
+
+/*announcements*/
+
+#news {
+    background-color: rgb(240, 230, 230);
+    padding: 30px 50px 70px 50px;
+}
+
+.news-title {
+    font-size: 30px;
+   
+}
+
+.news-title h1{
+
+}
+
+#news-tile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto-fit 1fr;
+    row-gap: 60px;
+    
+} 
+#news-tile img {
+    width: 100%;
+    
+}
+.board-passers {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    column-gap: 50px;
+    
+}
+
+.board-passers .board-text {
+    order: 2;
+}
+
+.board-passers .board-img {
+    order: 1;
+    
+}
+
+.board-passers .board-img img {
+    
+}
+
+
+.social-worker {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    
+
+}
+
+
+
+
+
+
+
+#background {
+    padding: 30px 50px 70px 50px;
+}
+
+.background-title {
+    font-size: 30px;
+
+}
+
+#background-tile {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+#background-tile .historical-bg {
+   line-height: 2;
+}
+
+#background-tile .background-img {
+    display: flex;
+    justify-content: flex-start;
+}
+.background-img img {
+    width: 500px;
+    
+}
+
+#footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 80px;
+    background-color: #5a0307;
+    color: white;
+}
+
+#footer-tile img {
+    width: 50px;
+    
+}
+#footer-tile {
+    grid-row: 1/2;
+    padding: 15px 70px 70px 70px ;
+    line-height: 2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: start;
+}
+#footer-tile .resources {
+    grid-column: 1/2;
+}
+
+
+#footer-tile .resources a {
+    font-size: 15px;
+}
+
+#footer-tile .upcoming-events {
+    grid-column: 2/3;
+}
+
+#footer-tile .other-links {
+    grid-column: 3/4;
+}
+
+#footer-tile .contact-us {
+    grid-column: 4/5;
+}
+
+#footer-tile .contact-us img{
+    margin-left: 30px;
+   
+}
+
+#footer-footer {
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(180, 154, 8);
+}
+
+#footer-footer p {
+    margin: 0;
+    font-size: 15px;
+
+}

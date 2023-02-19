@@ -1,0 +1,342 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+	
+}
+
+span {
+	color: white;
+	font-size: 25px;
+}
+
+
+.main {
+	height: 100vh;
+	padding: 25px;
+	background-color: aquamarine;
+	background-image: url('./images/bg-main.jfif');
+	background-size: cover ;
+	background-repeat: repeat;
+
+}
+.main div {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 30px;
+	align-items: center;
+
+}
+.main div .searchbar {
+	margin: 30px;
+
+}
+
+
+.main div .user {
+	margin: 50px;
+	cursor: pointer;
+}
+.main div .user:hover {
+	width: 35px;
+}
+
+.main div .shopping {
+	margin-right: 65px;
+	cursor: pointer;
+}
+.main div .shopping:hover {
+	width: 35px;
+}
+
+.main h1 {
+	font-size: 50px;
+	font-style: oblique;
+	text-align: center;
+	color: whitesmoke;
+	text-shadow: 2px 2px 4px #000000;
+	margin: 0 auto;
+}
+
+.main ul{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin: 50px;
+	text-transform: uppercase;
+	list-style-type: none;
+}
+
+.main ul a {
+	font-size: 15px;
+	font-weight: bolder;
+	padding: 10px;
+	text-decoration: none;
+	margin: auto 2px;
+	color: white;
+}
+.main ul a:hover {
+	color: lightslategray;
+}
+
+.bike-container {
+	
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #F5F5F5;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 100px;
+}
+.bike-container div {
+	padding: 30px;
+}
+
+.bike-container p {
+	padding: 5px;
+	margin: 0;
+	text-align: center;
+}
+
+.bike-container .onbikes{
+	font-weight: bolder;
+	margin: auto auto 50px 50px;
+	font-size: 45px;
+	flex-grow: 1;
+	letter-spacing: 2px;
+	
+}
+
+
+.qoute {
+	position: relative;
+ 	font-family: Arial;
+}
+
+.text-qoute {
+  position: absolute;
+  top: 70%;
+  left: 25%;
+  color: wheat;
+  font-style: italic;
+  font-size: 35px;
+
+}
+
+.accesories {
+	
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #F5F5F5;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 100px;
+}
+.accesories div {
+	padding: 30px;
+}
+
+.accesories p {
+	padding: 5px;
+	margin: 0;
+	text-align: center;
+}
+
+.accesories .onaccesories {
+	font-weight: bolder;
+	margin: auto auto 50px 40px;
+	font-size: 45px;
+	flex-grow: 1;
+	letter-spacing: 2px;
+	
+}
+
+
+.jersey {
+	
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #F5F5F5;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 100px;
+}
+.jersey div {
+	padding: 30px;
+}
+
+.jersey p {
+	padding: 5px;
+	margin: 0;
+	text-align: center;
+}
+
+.jersey .onjersey {
+	font-weight: bolder;
+	margin: auto auto 50px 40px;
+	font-size: 45px;
+	flex-grow: 1;
+	letter-spacing: 2px;
+	
+}
+.socials {
+	padding: 30px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-evenly;
+
+}
+.connect {
+	padding: 10px;
+}
+.connect h1 {
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 2px;
+	padding: 5px;
+}
+.connect .imgs {
+	margin-left: 20px;
+	cursor: pointer;
+}
+.connect .facebook:hover {
+	width: 25px;
+	height: 25px;
+}
+.connect .instagram:hover {
+	width: 25px;
+	height: 25px;
+}
+.connect .vimeo:hover {
+	width: 25px;
+	height: 25px;
+}
+
+.connect img {
+	margin: 5px;
+	align-content: center;
+}
+
+.signup {
+	padding: 5px;
+}
+
+.signup h1 {
+	margin-bottom: 10px;
+	font-size: 15px;
+	letter-spacing: 3px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 100;
+	font-style: bold;
+}
+
+.signup input {
+	width: 380px;
+	height: 35px;
+
+}
+.signup .submit {
+	text-align: center;
+	font-size: 15px;
+	border: 1px solid transparent;
+	background-color: #374048;
+	color: whitesmoke;
+	height: 30px;
+	padding: 5px;
+}
+
+.signup .submit a {
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+.signup .submit a:hover {
+	padding: auto 30px;
+}
+
+h6 {
+	padding: 13px;
+	letter-spacing: 2px;
+}
+
+
+@media only screen and (max-width: 500px) {
+	.main {
+		padding: 50px;
+	}
+	.main h1 {
+			font-size: 35px;	
+	}
+	.main div .header {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.main div .shopping {
+		margin-right: 10px;
+		background-color: rgba(211,211,211,0.1);
+		
+	}
+	.main div .user {
+		margin-right: 25px;
+		background-color: rgba(211,211,211,0.1);
+	}
+	.main ul {
+		display: inline-block;
+		margin-left: 0;
+		padding-left: 0;
+		margin-top: 0;
+		margin-bottom: 50px;
+
+	}
+
+	.main ul li{
+		font-size: 7px;
+		padding: 10px;
+
+
+	}
+
+
+	.qoute {
+		position: relative;
+ 		font-family: Arial;
+}
+
+	.text-qoute {
+	  position: absolute;
+	  top: 60%;
+	  left: 10%;
+	  color: wheat;
+	  font-style: italic;
+	  font-size: 20px;
+
+}
+
+	.socials  {
+		display: inline-block;
+	}
+	.socials .connect {
+		text-align: center;
+		padding: 30px;
+	}
+	.socials .connect h1 {
+		margin-left: 20px;
+		margin-bottom: 0;
+	}
+
+	.socials .signup h1{
+		text-align: center;
+	}
+	.socials .signup input{
+		width: 430px;
+		height: 35px;
+	}
+}
+
+
